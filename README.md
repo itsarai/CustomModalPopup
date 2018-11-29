@@ -25,6 +25,7 @@
 <h2>Model Popup Basic CSS with Animation</h2> 
 <pre>
 body {font-family:Arial, Helvetica, sans-serif;}
+
 /* The Modal (background) */
 .__ar_modal{
     display: none; /* Hidden by default */
@@ -39,6 +40,7 @@ body {font-family:Arial, Helvetica, sans-serif;}
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
+
 /* Modal Content */
 .__ar_modal-content {
     position: relative;
@@ -53,6 +55,7 @@ body {font-family:Arial, Helvetica, sans-serif;}
     animation-name: animatetop;
     animation-duration: 0.4s
 }
+
 /* Add Animation */
 @-webkit-keyframes animatetop {
     from {top:-300px; opacity:0} 
@@ -62,39 +65,49 @@ body {font-family:Arial, Helvetica, sans-serif;}
     from {top:-300px; opacity:0}
     to {top:0; opacity:1}
 }
+
 /* The Close Button */
 .__ar_modal-close {color:#fff;float:right;font-size:28px;font-weight:bold;}
 .__ar_modal-close:hover,
 .__ar_modal-close:focus {color:#000;text-decoration:none;cursor:pointer;}
+
 /* The Header/Footer */
 .__ar_modal-header{padding:2px 16px;background-color:#5cb85c;color:white;}
 .__ar_modal-body  {padding:2px 16px;}
 .__ar_modal-footer{padding:2px 16px;background-color:#5cb85c;color:white;}
+
 /* Remove Body Scroll when Model Open */
 .__ar_modal-open{overflow:hidden;}
+
 </pre>
 
 <h2>Model Popup Custom Javascript</h2>   
 <pre>
 // Get the modal
 var modal = document.getElementById('__arModal');
+
 // Get the button that opens the modal
 var btn = document.getElementById("__arModalBtn");
+
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("__ar_modal-close")[0];
+
 //Body scrollfix
 var bdclass = '__ar_modal-open';
+
 // When the user clicks the button, open the modal 
 btn.onclick = function() {
     history.pushState(null, null, window.location.pathname);
     document.body.classList.add(bdclass);
     modal.style.display = "block";
 }
+
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
     document.body.classList.remove(bdclass);
     modal.style.display = "none";
 }
+
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
     if (event.target == modal) {
@@ -102,6 +115,7 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+
 // When the user Press Esc Buttom in Keyboard, close it
 window.onkeydown = function (event) {
     event = event || window.event;
@@ -110,6 +124,7 @@ window.onkeydown = function (event) {
         modal.style.display = "none";
     }
 }
+
 // When the user Use Press Back Buttom in Browser/Mobile, close it
 window.onpopstate = function(event) {
     if(modal.style.display == 'none'){
