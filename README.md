@@ -1,5 +1,5 @@
 # CustomModalPopup
-<h1>Learn how to create a Custom Modal Popup with CSS and JavaScript. A modal is a dialog box/popup window that is displayed on top of the current page.</h1>
+<h2>Learn how to create a Custom Modal Popup with CSS and JavaScript. A modal is a dialog box/popup window that is displayed on top of the current page.</h2>
 
 <h2>Features</h2>
 <ol>
