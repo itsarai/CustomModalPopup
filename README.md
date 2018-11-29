@@ -12,12 +12,11 @@
 
 <h2>Browser support</h2>
 <ul>
-  <li>Chrome <em>(latest 2)</em></li>
+  <li>Chrome</li>
+  <li>Safari</li>
+  <li>Firefox</li>
   <li>Edge <em>(latest 2)</em></li>
-  <li>Firefox <em>(latest 2)</em></li>
-  <li>Internet Explorer 9+</li>
-  <li>Opera <em>(latest 2)</em></li>
-  <li>Safari <em>(latest 2)</em></li>
+  <li>Opera</li>
 </ul>
 
 <h2>Custom Animated Modal Popup with Header and Footer</h2>
