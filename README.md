@@ -3,11 +3,11 @@
 
 <h2>Features</h2>
 <ol>
-  <li>When the user clicks the button, open the modal</li>
-  <li>When the user clicks on (x), close the modal</li>
-  <li>When the user clicks anywhere outside of the modal, close it</li>
-  <li>When the user Press Esc Buttom in Keyboard, close it</li>
-  <li>When the user Use Press Back Buttom in Browser/Mobile, close it</li>
+  <li>When the user click the button, open the popup</li>
+  <li>When the user click on (x), close the popup</li>
+  <li>When the user click anywhere outside of the popup, close it</li>
+  <li>When the user Press Esc Button in Keyboard, close it</li>
+  <li>When the user Press Back Button in Browser/Mobile, close it</li>
 </ol>
 
 <h2>Browser support</h2>
@@ -78,7 +78,6 @@ body {font-family:Arial, Helvetica, sans-serif;}
 
 /* Remove Body Scroll when Model Open */
 .__ar_modal-open{overflow:hidden;}
-
 </pre>
 
 <h2>Model Popup Custom Javascript</h2>   
